@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 
 export class AppComponent { 
   title = 'my-app';
-  name = "app"
+  name:string = "Takeshi"
+  age:number = 69
 }
