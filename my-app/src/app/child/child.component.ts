@@ -5,15 +5,12 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.css']
 })
-export class ChildComponent implements OnInit {
+export class ChildComponent {
   name = "Anime"
-  @Output() onChanged = new EventEmitter<boolean>();
-  change(incr) {
-    this.onChanged.emit(incr)
+  @Input() UserName: string
+  @Output() UserNameChange = new EventEmitter<string>()
+  onNameChange(newName:string) {
+    this.UserName = newName
+    this.UserNameChange.emit(newName)
   }
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }

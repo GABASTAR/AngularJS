@@ -1,4 +1,5 @@
 <div>
-    <h2>Number of clicks {{click}}</h2>
-    <app-child (onChanged) = 'onChanged($event)'></app-child>
+    <h2>Sasisto {{click}}</h2>
+    <app-child [(UserName)] = 'name'></app-child>
+    <h1>Your name is - {{name}}</h1>
 </div>

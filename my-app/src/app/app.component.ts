@@ -7,13 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent { 
-  click: number = 0;
-  onChanged(incr) {
-    if(incr) {
-      this.click = this.click + 1
-    }
-    else {
-      this.click = this.click - 1
-    }
-  }
+  name:string = "Name"
 }

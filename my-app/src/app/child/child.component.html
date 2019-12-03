@@ -1,4 +1,3 @@
 <div>
-    <button (click) = "change(true)">Anime Heaeda</button>
-    <button (click) = "change(false)">Anime Baka</button>
+    <input type="text" [ngModel] = "UserName" (ngModelChange) = "onNameChange($event)">
 </div>
