@@ -8,7 +8,9 @@ import { ChildComponent } from './child/child.component';
 import { HomeComponent } from './route/home/home.component';
 import { AboutComponent } from './route/about/about.component';
 import { NotFoundComponent } from './route/not-found/not-found.component';
-import { ItemComponent } from './route/item/item.component'
+import { ItemComponent } from './route/item/item.component';
+import { DetailsComponent } from './route/item/details/details.component';
+import { StatsComponent } from './route/item/stats/stats.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ItemComponent } from './route/item/item.component'
     HomeComponent,
     AboutComponent,
     NotFoundComponent,
-    ItemComponent
+    ItemComponent,
+    DetailsComponent,
+    StatsComponent
   ],
   imports: [
     FormsModule,
