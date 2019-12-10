@@ -9,10 +9,14 @@ import { Subscription } from 'rxjs';
 })
 export class ItemComponent implements OnInit {
 id : number
-sub : Subscription
+price : string
+product : string
+subaru : Subscription
+subqaru : Subscription
   constructor(private activateRoute:ActivatedRoute) { 
     // this.id = activateRoute.params.subscribe["id"]
-    this.sub = activateRoute.params.subscribe(params => this.id = params["id"])
+    this.subaru = activateRoute.params.subscribe(params => this.id = params["id"])
+    this.subqaru = activateRoute.queryParams.subscribe((queryParams) => {this.product = queryParams["product"]; this.price = queryParams["price"]})
   }
 
   ngOnInit() {

@@ -12,10 +12,10 @@
             <a routerLink = "/about">About</a>
         </li>
         <li  routerLinkActive = "action">
-            <a [routerLink] = "['item', '5']">Item 5</a>
+            <a [routerLink] = "['item', '5']" [queryParams] = "{'product': 'Phone', 'price': '16990'}">Item 5</a>
         </li>
         <li  routerLinkActive = "action">
-            <a [routerLink] = "['item', '8']">Item 8</a>
+            <a [routerLink] = "['item', '8']" [queryParams] = "{'product': 'PhoneXL', 'price': '21990'}">Item 8</a>
         </li>
     </ul>
     <h3>Router in Angular</h3>
