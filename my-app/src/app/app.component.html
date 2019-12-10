@@ -11,6 +11,12 @@
         <li [routerLinkActiveOptions] = "{exact:true}" routerLinkActive = "action">
             <a routerLink = "/about">About</a>
         </li>
+        <li  routerLinkActive = "action">
+            <a [routerLink] = "['item', '5']">Item 5</a>
+        </li>
+        <li  routerLinkActive = "action">
+            <a [routerLink] = "['item', '8']">Item 8</a>
+        </li>
     </ul>
     <h3>Router in Angular</h3>
     <router-outlet></router-outlet>
