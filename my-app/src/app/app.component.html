@@ -1,1 +1,7 @@
-<h3>Holla</h3>
+<body class="bg">
+    <div>
+        <h2>Number of clicks {{click}}</h2>
+        <app-child (onChanged) = 'onChanged($event)' [(UserName)] = 'name'></app-child>
+        <p class  = "par">Your name is - {{name}}</p>
+    </div>
+</body>
