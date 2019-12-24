@@ -1,7 +1,15 @@
-<body class="bg">
+<!-- <body class="bg"> -->
+<body>
     <div>
-        <h2>Number of clicks {{click}}</h2>
+        <!-- <h2>Number of clicks {{click}}</h2>
         <app-child (onChanged) = 'onChanged($event)' [(UserName)] = 'name'></app-child>
-        <p class  = "par">Your name is - {{name}}</p>
+        <p class  = "par">Your name is - {{name}}</p> -->
+        <nav>
+            <a routerLink="/main" routerLinkActive="active">Main</a><br>
+            <a routerLink="/about" routerLinkActive="active">About</a><br>
+            <a routerLink="/login" routerLinkActive="active">Login</a><br>
+            <a routerLink="/fiojdiofj" routerLinkActive="active">Not-found</a><br>
+          </nav>
+        <router-outlet></router-outlet>
     </div>
 </body>
