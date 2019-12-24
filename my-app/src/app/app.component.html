@@ -1,31 +1,7 @@
-<div>
-    <h2>Sasisto {{click}}</h2>
-    <app-child [(UserName)] = 'name'></app-child>
-    <h1>Your name is {{name}}</h1>
-</div><br>
-<div>
-    <ul class="nav">
-        <li [routerLinkActiveOptions] = "{exact:true}" routerLinkActive = "action">
-            <a routerLink = "">Main</a>
-        </li>
-        <li [routerLinkActiveOptions] = "{exact:true}" routerLinkActive = "action">
-            <a routerLink = "/about">About</a>
-        </li>
-        <li  routerLinkActive = "action">
-            <a [routerLink] = "['item', '5']" [queryParams] = "{'product': 'Phone', 'price': '16990'}">Item 5</a>
-        </li>
-        <li  routerLinkActive = "action">
-            <a [routerLink] = "['item', '8']" [queryParams] = "{'product': 'PhoneXL', 'price': '21990'}">Item 8</a>
-        </li>
-        <li  routerLinkActive = "action">
-            <a [routerLink] = "['item', '5', 'details']" [queryParams] = "{'product': 'Phone', 'price': '16990'}">Details</a>
-        </li>
-        <li  routerLinkActive = "action">
-            <a [routerLink] = "['item', '8', 'stats']" [queryParams] = "{'product': 'PhoneXL', 'price': '21990'}">Stats</a>
-        </li>
-    </ul>
-    <h3>Router in Angular</h3>
-    <router-outlet></router-outlet>
-    <button (click) = "goHome()">Go home</button>
-</div><br>
-
+<body class="bg">
+    <div>
+        <h2>Number of clicks {{click}}</h2>
+        <app-child (onChanged) = 'onChanged($event)' [(UserName)] = 'name'></app-child>
+        <p class  = "par">Your name is - {{name}}</p>
+    </div>
+</body>

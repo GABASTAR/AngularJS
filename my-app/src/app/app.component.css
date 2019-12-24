@@ -1,9 +1,7 @@
-.action {
-    color: red;
+.p {
+    color: rgb(0, 247, 255);
+    font-size: 2vw;
 }
-.nav {
-    clear: both;
-}
-a {
-    float: left;
+.bg {
+    background: grey;
 }

@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+.par {
+    border: 7px double rgb(187, 57, 57);
+    background: rgb(95, 95, 95);
+    padding: 10px;
+    border-radius: 2vw;
+    border-color: hotpink;
+    font-size: 2vw;
+    color: rgb(0, 225, 255);
+    width: 20vw;
+}
