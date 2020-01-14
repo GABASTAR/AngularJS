@@ -1,13 +1,18 @@
 <div>
     <form (ngSubmit) = "MakeLogin()">
-        <input type = "text" placeholder = "Enter login" [(ngModel)] = "login" name="login">
-        <input type = "password" placeholder = "Enter password" [(ngModel)] = "password" name = "password">
-        <input type = "submit" placeholder = "Send" value="Sign in">
+        <input type = "text" placeholder = "Enter city" [(ngModel)] = "login" name="login">
+        <input type = "text" placeholder = "Enter country" [(ngModel)] = "password" name = "password">
+        <input type = "submit" placeholder = "Send" value="Add city" (click) = "do(login, password)">
     </form>
     <div *ngIf = "entered">
-        <p>You have Entered</p>
+        <p>You have added the city</p>
     </div>
     <div *ngIf = "!entered">
-        Get out of here!
+        <!-- Get out of here! -->
+        Holla!
     </div>
+    <li *ngFor = "let item of items">
+        City: {{item.city}}
+        Country: {{item.country}}
+    </li>
 </div>

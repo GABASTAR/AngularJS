@@ -15,8 +15,8 @@ const appRoutes: Routes = [
   { path: "about", component: AboutComponent},
   { path: "contact", component: AboutComponent},
   { path: "contacts", component: AboutComponent},
-  { path: "login", component: LoginComponent},
-  { path: "main", component: MainComponent},
+  { path: "main", component: LoginComponent},
+  { path: "login", component: MainComponent},
   { path: "**", component: NotFoundComponent}
 ];
 
